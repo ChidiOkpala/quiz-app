@@ -51,7 +51,8 @@ const QuestionCard: React.FC<Props> = ({
                             className={`one_answer ${correctAnswer === answer ?  'greenButton' : null} ${wrongAnswer === answer ? 'redButton' : null}`} 
                             disabled={!!userAnswer} 
                             value={answer} 
-                            onClick={callback}>
+                            onClick={callback}
+                            >
                                 <span dangerouslySetInnerHTML={{ __html: answer}} />
                         </button>
                     </div>

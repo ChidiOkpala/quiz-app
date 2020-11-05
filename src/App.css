@@ -7,11 +7,50 @@
     height: 100vh;
 }
 
-.start, .next{
+.start, .next, .submit{
     width:270px;
     height: 30px;
     border-radius: 5px;
+    border:  none;
     margin: 10px auto;
     background-color: lightslategray;
     color: rgb(255, 235, 205);
+}
+
+.submit{
+    background-color: black;
+}
+
+.totalquestion{
+    width:270px;
+    height: 35px;
+    border-radius: 5px;
+    border:  none;
+    margin: 10px auto;
+    padding-left: 5px;
+    color:lightslategray;
+    background-color: rgb(255, 235, 205);
+}
+
+.start:focus, .next:focus, .totalquestion:focus, .submit:focus{
+    outline: none;
+}
+
+.settings-block{
+    display: flex;
+    flex-direction: column;
+}
+
+.form{
+    border: 5px solid black;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.start-settings{
+    max-width:600px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
